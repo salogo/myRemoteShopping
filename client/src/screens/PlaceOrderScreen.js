@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { addToCart, removeFromCart } from '../actions/cartActions';
+//import { addToCart, removeFromCart } from '../actions/cartActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CheckoutSteps from '../components/CheckoutSteps';
@@ -8,7 +8,7 @@ function PlaceOrderScreen(props) {
 
   const cart = useSelector(state => state.cart);
   const orderCreate = useSelector(state => state.orderCreate);
-  const { loading, success, error, order } = orderCreate;
+  const { /*loading, */ success,  /* error,  */ order } = orderCreate;
 
   const { cartItems, shipping, payment } = cart;
   if (!shipping.address) {

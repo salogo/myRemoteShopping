@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect /* , useState */ } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { signin } from '../actions/userActions';
+//import { signin } from '../actions/userActions';
 //import { saveOrder , listOrders, deleteOrder } from '../actions/orderActions';
-import { saveOrder , listMyOrders /*, deleteOrder */} from '../actions/orderActions';
+import { /* saveOrder ,  */ listMyOrders /*, deleteOrder */} from '../actions/orderActions';
 
 function OrdersScreen(props) {
   console.log("dd")
   const orderList = useSelector(state => state.orderList);
-  const { loading, orders, error } = orderList;
+  const { loading, orders  /* , error */ } = orderList;
 
   const orderDelete = useSelector(state => state.orderDelete);
-  const { loading: loadingDelete, success: successDelete, error: errorDelete } = orderDelete;
+  const { /*loading: loadingDelete, */ success: successDelete /* , error: errorDelete */} = orderDelete;
 
   const dispatch = useDispatch();
 

@@ -22,7 +22,7 @@ function ProductScreen(props) {
 
   return <div>
     <div className="back-to-result">
-      <Link to="/">Back to result</Link>
+      <Link to="/">Back to Home Page</Link>
     </div>
     {loading ? <div>Loading...</div> :
       error ? <div>{error} </div> :
@@ -37,7 +37,7 @@ function ProductScreen(props) {
                   <h4>{product.name}</h4>
                 </li>
                 <li>
-                  {product.rating} Stars ({product.numReviews} Reviews)
+                  
           </li>
                 <li>
                   Price: <b>${product.price}</b>

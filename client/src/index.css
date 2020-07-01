@@ -55,7 +55,7 @@ button{
 }
 .footer{
   grid-area: footer;
-  background-color: #203040;
+  background-color: #203f40;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -160,6 +160,8 @@ a:hover{
 }
 .details-info {
   flex: 1 1 30rem;
+  border: 1rem #404040 solid;
+  padding: 1rem;
 }
 .details-action {
   flex: 1 1 30rem;
@@ -176,10 +178,10 @@ a:hover{
   padding: 1rem;
 }
 .details-action{
-  border: .1rem #808080 solid;
+  border: .5rem #808080 solid;
   border-radius: 0.5rem;
   background-color: #f8f8f8;
-  padding: 1rem;
+  padding: 3rem;
 }
 .details-action ul li:last-child{
   display: flex;
@@ -196,7 +198,7 @@ a:hover{
   border: .1rem #404040 solid;
 }
 .button.primary{
-  background-color: #f0c040;
+  background-color: #FFC0CB;
 }
 .button.secondary{
   background-color: #f0f0f0;
