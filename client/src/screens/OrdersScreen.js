@@ -1,8 +1,7 @@
 import React, { useEffect /* , useState */ } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-//import { signin } from '../actions/userActions';
-//import { saveOrder , listOrders, deleteOrder } from '../actions/orderActions';
+
 import { /* saveOrder ,  */ listMyOrders /*, deleteOrder */} from '../actions/orderActions';
 
 function OrdersScreen(props) {
@@ -23,7 +22,7 @@ function OrdersScreen(props) {
   }, [successDelete]);
 
   const deleteHandler = (order) => {
-    //dispatch(deleteOrder(order._id));
+    
   }
   return loading ? <div>Loading...</div> :
     <div className="content content-margined">
